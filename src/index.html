@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <div class="m-0 p-1 box-border font-serif">
+      <div
+        class="w-11/12 max-w-md bg-gradient-to-r from-[#00feba] to-[#5b548a] text-white rounded-2xl py-9 px-9 text-center mt-21 mx-auto mb-0"
+      >
+        <div class="w-full flex items-center justify-between">
+          <input
+            id="searchbox"
+            type="text"
+            placeholder="enter city name"
+            spellcheck="false"
+            class="border-0 outline-0 bg-[#ebfffc] text-[#555] py-2 px-6 h-14 rounded-3xl flex-1 mr-4 text-lg"
+          />
+          <button
+            id="searchbutton"
+            class="border-0 outline-0 bg-[#ebfffc] rounded-[50%] w-14 h-14 cursor-pointer"
+          >
+            <img src="\images\search.png" class="w-4 ml-[18px]" />
+          </button>
+        </div>
+        <div id="error">
+          <p class="text-left ml-2 text-sm mt-2">Invalid city name</p>
+        </div>
+        <div>
+          <img
+            src="/images/clear.png"
+            class="w-[170px] mt-6"
+            id="weather-icon"
+          />
+          <h1 class="text-[80px] font-medium mt-[-8px]" id="temp" >22°C</h1>
+          <h2 class="text-[45px] font-normal mt-[-18px]" id="city">Rajkot</h2>
+          <div class="flex items-center justify-between py-0 px-5 mt-12">
+            <div class="flex items-center text-left">
+              <img src="/images/humidity.png" class="w-10 mr-2" />
+              <div>
+                <p id="humidity">50%</p>
+                <p class="text-2xl mt-[-6px]">humidity</p>
+              </div>
+            </div>
+            <div class="flex items-center text-left">
+              <img src="/images/wind.png" class="w-10 mr-2" />
+              <div>
+                <p id="wind">15 km/h</p>
+                <p class="text-2xl mt-[-6px]">wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
